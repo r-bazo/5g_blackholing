@@ -87,10 +87,12 @@ This test will create random clients up to a total of 10 clients and send 10 req
 
 The output of the custom files can be seen in the my5G-core outputs, where there are telemetry outputs from each clients, such as:
 ![This specific debug output will appear for each batch of requests sent by the test script running on the other terminal.](telemetry.png)
+*This specific debug output will appear for each batch of requests sent by the test script running on the other terminal.*
 
 
 Let the test code execute for a certain time and at some point you should see clients with a larger number of requests being blackholed:
 ![This means that that connection was dropped by the core, avoiding what could be a potential DoS attack.](blackhole.png)
+*This means that that connection was dropped by the core, avoiding what could be a potential DoS attack.*
 
 
 ## Potential Future Works
